@@ -3,6 +3,4 @@ class Solution:
         max_reach = 0
         for i, jump in enumerate(nums):
             # If the current index is past the furthest we can reach, we are stuck
-            if i > max_reach:
-                return False
-
+        
