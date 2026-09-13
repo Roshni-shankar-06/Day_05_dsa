@@ -3,8 +3,5 @@ class Solution:
         res = []
         
         def backtrack(start: int, current: list):
-            if len(current) == k:
-                res.append(list(current))
-                return
-            
+            i
          
