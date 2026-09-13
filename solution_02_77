@@ -1,1 +1,19 @@
+class Solution:
+    def combine(self, n: int, k: int) -> List[List[int]]:
+        res = []
+        
+        def backtrack(start: int, current: list):
+            if len(current) == k:
+                res.append(list(current))
+                return
+            
+            need = k - len(current)
+            # Pruning: only loop up to n - need + 1
+            for i in range(start, n - need + 2):
+                current.append(i)
+                backtrack(i + 1, current)
+                current.pop()
+                
+        backtrack(1, [])
+        return res
 
