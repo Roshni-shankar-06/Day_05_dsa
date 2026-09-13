@@ -2,5 +2,4 @@ class Solution:
     def canJump(self, nums: list[int]) -> bool:
         max_reach = 0
         for i, jump in enumerate(nums):
-            # If the current index is past the furthest we can reach, we are stuck
-        
+         
