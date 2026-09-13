@@ -7,6 +7,4 @@ class Solution:
                 res.append(list(current))
                 return
             
-            need = k - len(current)
-            # Pruning: only
-           
+         
