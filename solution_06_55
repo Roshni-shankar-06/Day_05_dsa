@@ -12,14 +12,3 @@ class Solution:
     for j, c in enumerate(p):
       if c == '*':
         dp[0][j + 1] = dp[0][j]
-
-    for i in range(m):
-      for j in range(n):
-        if p[j] == '*':
-          matchEmpty = dp[i + 1][j]
-          matchSome = dp[i][j + 1]
-          dp[i + 1][j + 1] = matchEmpty or matchSome
-        elif isMatch(i, j):
-          dp[i + 1][j + 1] = dp[i][j]
-
-    return dp[m][n]
