@@ -12,8 +12,4 @@ class Solution:
             for i in range(start, n - need + 2):
                 current.append(i)
                 backtrack(i + 1, current)
-                current.pop()
-                
-        backtrack(1, [])
-        return res
-
+           
