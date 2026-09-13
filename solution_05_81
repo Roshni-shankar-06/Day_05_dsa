@@ -15,7 +15,5 @@ class Solution:
           r = m - 1
         else:
           l = m + 1
-      else:  # nums[m..n - 1] are sorted
-        if nums[m] < target <= nums[r]:
-          l = m + 1
+ 
      
