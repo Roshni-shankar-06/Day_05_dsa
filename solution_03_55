@@ -5,6 +5,4 @@ class Solution:
             # If the current index is past the furthest we can reach, we are stuck
             if i > max_reach:
                 return False
-            # Update the maximum reachable index
-            
 
