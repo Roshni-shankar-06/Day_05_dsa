@@ -8,8 +8,5 @@ class Solution:
                 return
             
             need = k - len(current)
-            # Pruning: only loop up to n - need + 1
-            for i in range(start, n - need + 2):
-                current.append(i)
-                backtrack(i + 1, current)
+            # Pruning: only
            
