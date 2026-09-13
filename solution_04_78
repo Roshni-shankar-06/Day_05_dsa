@@ -3,9 +3,7 @@ class Solution:
     ans = []
 
     def dfs(s: int, path: list[int]) -> None:
-      ans.append(path)
-
-      for i in range(s, len(nums)):
+   
   
 
 
