@@ -11,5 +11,4 @@ class Solution:
             for bx, by in ones2:
                 offsetCount[(ax - bx) * MAGIC + (ay - by)] += 1
                 
-        return max(offsetCount.values()) if offsetCount else 0
 
