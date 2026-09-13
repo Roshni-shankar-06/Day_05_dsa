@@ -6,6 +6,5 @@ class Solution:
             if i > max_reach:
                 return False
             # Update the maximum reachable index
-            max_reach = max(max_reach, i + jump)
-        return True
+            
 
